@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Happy Birthday</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(#fbc2eb, #a6c1ee);
+      font-family: Arial, sans-serif;
+    }
+
+    .card {
+      text-align: center;
+      animation: fadeIn 2s ease;
+    }
+
+    .cake {
+      position: relative;
+      width: 140px;
+      margin: auto;
+      animation: bounce 1.2s infinite alternate;
+    }
+
+    .layer {
+      height: 25px;
+      border-radius: 8px;
+      margin: 4px 0;
+    }
+
+    .l1 { background: #f5cba7; }
+    .l2 { background: #edbb99; }
+    .l3 { background: #e59866; }
+
+    .icing {
+      height: 18px;
+      background: #fff;
+      border-radius: 10px;
+    }
+
+    .candle {
+      position: absolute;
+      top: -30px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 6px;
+      height: 25px;
+      background: white;
+      border-radius: 3px;
+    }
+
+    .flame {
+      position: absolute;
+      top: -18px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 14px;
+      height: 20px;
+      background: radial-gradient(circle, yellow, orange, red);
+      border-radius: 50%;
+      animation: flicker 0.2s infinite alternate;
+    }
+
+    @keyframes flicker {
+      from { transform: translateX(-50%) scale(1); }
+      to { transform: translateX(-50%) scale(1.4); }
+    }
+
+    @keyframes bounce {
+      from { transform: translateY(0); }
+      to { transform: translateY(-15px); }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    h2 {
+      margin-top: 15px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <div class="cake">
+      <div class="candle">
+        <div class="flame"></div>
+      </div>
+      <div class="icing"></div>
+      <div class="layer l1"></div>
+      <div class="layer l2"></div>
+      <div class="layer l3"></div>
+    </div>
+
+    <h2>🎂 Happy Birthday</h2>
+    <p>keerthu 💖</p>
+  </div>
+
+</body>
+</html>
